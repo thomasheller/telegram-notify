@@ -1,5 +1,5 @@
 #!/bin/bash
 while read line
 do
-	echo "$line" | tr '§' '\n' | notify.py
+	echo "$line" | sed 's/§/\n/g' | notify.py
 done
