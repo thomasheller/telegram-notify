@@ -10,7 +10,7 @@ Send stdin as a Telegram message to a specific user.
 
 ## Setup
 
-Set API token and chat ID in `notify.ph`.
+Set API token and chat ID in `notify.py`.
 
 Make sure `notify.py` is executable.
 
