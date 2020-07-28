@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import requests
 import sys
@@ -12,7 +12,7 @@ message = sys.stdin.read()
 if len(message) > 4096:
     message = message[:4092] + ' ...'
 
-query = urllib.quote(message)
+query = urllib.parse.quote(message)
 
 result = requests.get('https://api.telegram.org/bot' + TELEGRAM_APITOKEN + '/sendMessage?chat_id=' + TELEGRAM_CHATID + '&text=' + query)
 
